@@ -1,5 +1,14 @@
 title: Documentation Project Template
 href: index.yaml
+navigation:
+  header:
+    leftItems:
+      - text: "ya"
+        type: "link"
+        url: "https://ya.ru"
+      - text: "ya"
+        type: "link"
+        url: "https://ya.ru"
 items: 
   - name: About
     href: about.md
