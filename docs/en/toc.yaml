@@ -2,13 +2,12 @@ title: Documentation Project Template
 href: index.yaml
 navigation:
   logo:
-    url: ''
+    url: "/"
+    urlTitle: 'Вернуться на главную'
     dark:
-      icon: ''
-      text: ''
+      icon: "https://storage.yandexcloud.net/diplodoc-www-assets/logo/ddos-logo-dark.svg"
     light:
-      icon: ''
-      text: ''
+      icon: "https://storage.yandexcloud.net/diplodoc-www-assets/navigation/diplodoc-logo.svg"
   header:
     leftItems:
       - text: "ya"
