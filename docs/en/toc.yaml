@@ -1,6 +1,14 @@
 title: Documentation Project Template
 href: index.yaml
 navigation:
+  logo:
+    url: ''
+    dark:
+      icon: ''
+      text: ''
+    light:
+      icon: ''
+      text: ''
   header:
     leftItems:
       - text: "ya"
