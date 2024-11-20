@@ -1,0 +1,20 @@
+name: Hello World Action
+
+on:
+  push:
+    branches:
+      - main  # This will trigger the action on a push to the main branch
+  pull_request:
+    branches:
+      - main  # This will also trigger the action on a pull request targeting the main branch
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Say Hello
+        run: echo "Hello, World!"
