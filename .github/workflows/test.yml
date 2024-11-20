@@ -1,12 +1,10 @@
-name: Hello World Action
+name: Say Hello World
 
 on:
-  push:
-    branches:
-      - main  # This will trigger the action on a push to the main branch
-  pull_request:
-    branches:
-      - main  # This will also trigger the action on a pull request targeting the main branch
+  workflow_run:
+    workflows: ["Build"]  # Name of the workflow you want to listen to
+    types:
+      - completed
 
 jobs:
   say_hello:
