@@ -3,9 +3,9 @@ contact_links:
   - name: Diplodoc documentation (EN)
     url: https://diplodoc.com/docs/en/
     about: 1
-  - name: Документация Диплодока
+  - name: Документация Диплодока (RU)
     url: https://diplodoc.com/docs/ru/
     about: 2
-  - name: Diplodoc Community Chat (RU)
-    url: Тelegram
+  - name: Комьюнити чат (RU)
+    url: https://t.me/diplodoc_ru
     about: 3
