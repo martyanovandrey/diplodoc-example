@@ -1,7 +1,7 @@
 name: Feature request
 description: Missing functionality? Come tell us about it!
 labels:
-  - feature
+  - enhancement
 body:
   - type: textarea
     id: description
