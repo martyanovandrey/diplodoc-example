@@ -2,7 +2,10 @@ blank_issues_enabled: true
 contact_links:
   - name: Diplodoc documentation (EN)
     url: https://diplodoc.com/docs/en/
+    about: 1
   - name: Документация Диплодока
     url: https://diplodoc.com/docs/ru/
+    about: 2
   - name: Diplodoc Community Chat (RU)
     url: Тelegram
+    about: 3
