@@ -2,10 +2,10 @@ blank_issues_enabled: true
 contact_links:
   - name: Diplodoc documentation (EN)
     url: https://diplodoc.com/docs/en/
-    about: 1
+    about: Try to find a solution to your problem in the documentation
   - name: Документация Диплодока (RU)
     url: https://diplodoc.com/docs/ru/
-    about: 2
+    about: Попробуйте найти решение своей проблемы в документации
   - name: Комьюнити чат (RU)
     url: https://t.me/diplodoc_ru
-    about: 3
+    about: Спросить у сообщества
