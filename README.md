@@ -3,7 +3,7 @@
 Features:
 
 - initial project structure
-- dev server with hot reload
+- dev server with hot reload1
 - codespaces support
 - vscode tutorial via code tours
 
