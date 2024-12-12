@@ -11,7 +11,7 @@ For Russian speaking contributors:
 Перед отправкой PR-a, пожалуйста, прочтите гайды для разработчиков платформы Diplodoc : https://diplodoc.com/docs/ru/dev/
 #xxxx" -->
 
-**What I did**
+## Description
 <!-- Description of the changes made. If it is feasible, it is worth attaching a screenshot or video of the changes. -->
 
 **Related issue**
