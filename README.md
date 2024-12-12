@@ -10,7 +10,7 @@ Features:
 ## Initial project structure
 
 Initiatl project structure with basic content can be found within your public github repo "diplodoc-example/docs" 
-
+1
 ## Usage
 
 ### Run locally by cloning repo:
