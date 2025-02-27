@@ -2,7 +2,7 @@ name: Say Hello World
 
 on:
   workflow_run:
-    workflows: ["Build"]  # Name of the workflow you want to listen to
+    workflows: [Build]  # Name of the workflow you want to listen to
     types:
       - completed
 
@@ -15,4 +15,4 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Say Hello
-        run: echo "Hello, World!!!"
+        run: echo "Hello, World!!!1234"
