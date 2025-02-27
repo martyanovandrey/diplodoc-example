@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
   pull_request:
     types: [closed]
-    branches:    
-      - main
+    branches:
+      - 'main'
+      - 'stable-**'
 
 jobs:
   check-env:
@@ -36,10 +37,30 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Extract version
+        shell: bash
+        run: echo "VERSION=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" | sed -e 's|stable-|v|g' -e 's|-|.|g' >> $GITHUB_ENV
+        id: extract_version
+
+      - name: Set Default Version
+        id: set-default-version
+        shell: bash
+        env:
+          DEFAULT_VERSION: "main"
+        run: |
+          BRANCH_NAME=${GITHUB_REF##*/}
+          if [[ "$BRANCH_NAME" == "$DEFAULT_VERSION" ]]; then
+            echo "UPDATE_ONLY_VERSION=false" >> $GITHUB_ENV
+          else
+            echo "UPDATE_ONLY_VERSION=true" >> $GITHUB_ENV
+          fi
+          
       - name: Release
         uses: diplodoc-platform/docs-release-action@v2
         with:
           revision: "${{ github.sha }}"
+          version: "${{ env.VERSION }}"
+          update-only-version: "${{ env.UPDATE_ONLY_VERSION }}"
           storage-bucket: ${{ vars.DIPLODOC_STORAGE_BUCKET }}
           storage-access-key-id: ${{ secrets.DIPLODOC_ACCESS_KEY_ID }}
           storage-secret-access-key: ${{ secrets.DIPLODOC_SECRET_ACCESS_KEY }}
