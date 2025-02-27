@@ -45,7 +45,7 @@ jobs:
         id: set-default-version
         shell: bash
         env:
-          DEFAULT_VERSION: "main"
+          DEFAULT_VERSION: "stable-1-1-1"
         run: |
           BRANCH_NAME=${GITHUB_REF##*/}
           if [[ "$BRANCH_NAME" == "$DEFAULT_VERSION" ]]; then
